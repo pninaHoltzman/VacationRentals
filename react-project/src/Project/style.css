@@ -1,0 +1,586 @@
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(29, 57, 237);
+    height: 70px;
+    width:100%;
+}
+#bodyDiv1{
+  background-image: url('./pictures/border.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 489px;
+}
+#bodyDiv2{
+  background-image: url('./pictures/border.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 700;
+}
+
+#con{
+  margin-top: 1%;
+  display: flex;
+}
+#bigImage{
+ width: 250vh;
+ height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+#allDetails{
+  margin-left: 30px;
+  width: 35%;
+  height: 450;
+
+}
+#buttons{
+  display: flex;
+  width: 100%;
+}
+.divA{
+  width: 20%;
+  height: 200px;
+}
+.inputA{
+  width: 70%;
+    width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
+  padding: 10px 2px 0;
+  border-bottom: 2px solid #e0e0e0;
+}
+.inputA:focus + .signup__label,
+.inputA:valid + .signup__label {
+  top: 0;
+  font-size: 1rem;
+  background-color: white;
+}
+.send{
+  background-color: palevioletred;
+  width: 100px;
+}
+.advetisterButton{
+  height: 50px;
+  width: 110px;
+}
+
+
+#noResult{
+  color: red;
+  font-size: 20px;
+  margin-left: 42%;
+}
+#routing {
+    display: flex;
+    gap: 15px;
+}
+.logo{
+    height: 12vh;
+    width: 20vh;
+    background-image: url('./pictures/colorLogo.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.link {
+    color: white; 
+    text-decoration: none; 
+    font-size: 20px;
+    font-weight: bold; 
+    
+}
+.opening{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-image: url('./pictures/openPic.jpg');
+    background-size: cover;
+    justify-content: center;
+    background-position: center;
+    align-items:flex-end;
+    flex-wrap: wrap; 
+    margin-bottom: 30px;
+
+}
+
+#search {
+  display: flex;
+  height: 90px;
+  width: 80%;
+  background-color: white;
+  margin-bottom: 10%;
+  border-radius: 50px;
+  border: 5px solid rgb(29, 57, 237);
+  overflow: hidden; /* מניעת חריגות */
+}
+#det{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-top: 40px;
+  margin-left: 68%;
+  height: 32px;
+  width: 80px;
+  font-size: 12px;
+}
+.card {
+    display: flex;
+    width: 22%;
+    height: 500px;
+    background-color: rgba(222, 228, 228, 0.451);
+    flex-wrap: wrap; 
+    padding: 6px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(205, 203, 203, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 25px rgba(237, 234, 234, 0.3); 
+}
+.image{
+    margin-top: 2px;
+    width: 98%;
+    height: 250px;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+}
+.words{
+  row-gap: 40px;
+    width: 100%;
+    height: 200px;  
+}
+.h51{
+  margin-bottom: 7px;
+}
+.h41{
+  margin-bottom: 7px;
+}
+.p1{
+  margin-bottom: 7px;
+}
+.card-container {
+    display: flex;
+    gap: 20px; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+  }
+/* עיצוב login/signup */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+
+.signup {
+  margin-left: 10%;
+  background-color: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 50px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-radius: 20px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  text-align: center;
+  color: #a4243b;
+}
+h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: lighter;
+
+  margin-bottom: 40px;
+}
+
+h2 span {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #a4243b;
+}
+
+/*  Field */
+.signup__field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.signup__field:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  background: #a4243b;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.4s ease;
+}
+
+.signup__field:hover:before {
+  width: 100%;
+}
+
+
+.signup__input {
+  width: 100%;
+  height: 100%;
+  font-size: 1.2rem;
+  padding: 10px 2px 0;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+/*  Label */
+.signup__label {
+  color: #bdbdbd;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2px;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.signup__input:focus + .signup__label,
+.signup__input:valid + .signup__label {
+  top: 0;
+  font-size: 1rem;
+  background-color: white;
+}
+
+.next {
+  background: #a4243b;
+  color: white;
+  padding: 12px 0;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.next:hover {
+  background: #4b111b;
+}
+/* select */
+/* עיצוב בסיסי עבור ה-select */
+.cities {
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none; 
+  font-size: 20px;
+  font-family: 'Arial', sans-serif;
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  background-color: #fff;
+  color: #333;
+  width: 30%; 
+  height: 90%; 
+  box-sizing: border-box; /* ודא שהpadding והborder לא משפיעים על המידות */
+  transition: all 0.3s ease-in-out; 
+}
+
+/* עיצוב בעת hover על ה-select */
+#cities:hover {
+  border-color: #007BFF; /* צבע גבול כחול בעת hover */
+  background-color: #f8f9fa; /* שינוי צבע הרקע */
+}
+
+/* עיצוב בעת focus (כאשר התיבה פעילה) */
+#cities:focus {
+  outline: none; /* מסיר את הקו סביב ה-select */
+  border-color: #007BFF; /* גבול כחול בעת focus */
+  background-color: #f1f7ff; /* שינוי צבע הרקע בעת focus */
+}
+
+
+#cities::after {
+  content: '\25BC'; 
+  font-size: 12px;
+  color: #007BFF;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none; 
+}
+
+
+.container {
+  height: 50px;
+  width: 30%;
+}
+
+
+#cities option {
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  font-size: 16px;
+}
+
+#cities option:hover {
+  background-color: #e0e0e0; /* שינוי צבע בעת hover על אופציה */
+}
+#searchButton{
+  height: 100%;
+  width: 20%;
+  background-color: pink;
+  border-radius: 50px;
+}
+/* edit */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+button.submit-btn {
+  background-color: #682663;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button.submit-btn:hover {
+  background-color: #a0459a;
+}
+#buttons{
+  margin-top: 8%;
+}
+.advetisterButton{
+
+  width: 25%;
+}
+#many{
+  margin-top: 90px;
+}
+#big{
+  height: 130px;
+}
+#acategory{
+  margin-left: 28%;
+  background-color: #c228e565;
+}
+#acity{margin-left: 53%;
+  background-color: #e5289065;
+}
+.home-to-go-button {
+  background: linear-gradient(135deg, #6C28E5, #FF6E3E);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.home-to-go-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+.x{
+  background-color: red;
+  height: 25px;
+  width: 15px;
+  margin-right: 95%;
+}
+#cit{
+  margin-top: 5px;
+}
+.bed{
+  width: 60px;
+  height: 30px;
+  border-radius:15px;
+  border: 0.1px double rgba(19, 19, 20, 0.329);
+}
+.bed2{
+  height: 30px;
+  width: 80px;
+  border-radius:15px;
+  border: 0.1px double rgba(19, 19, 20, 0.329);
+}
+#left{
+  font-size: 50px;
+  margin-top: 20%;
+}
+#right{
+  margin-top: 20%;
+  margin-left: 94%;
+  font-size: 50px;
+}
+/* המשך */
+.line{
+color: white;
+}
+#edit{
+margin-right: 65%;
+margin-left: 5%;
+}
+.p3{
+  margin-top: 15px;
+  font-size: 15px;
+}
+.p41{
+  margin-bottom: 15px;
+  font-size: x-large;
+}
+#p44{
+  margin-top: 15px;
+}
+#p444{
+margin-bottom: 15px;
+}
+#h{
+  font-size: x-large;
+}
+/* עיצוב כללי לטופס */
+.apartment-form {
+background-color:rgba(0, 0, 0, 0.271);
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+.all1{
+  background-image: url('./pictures/back1.png');
+  max-width: 100%;
+}
+
+/* עיצוב כל שדה בטופס */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* עיצוב תוויות (labels) */
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* עיצוב שדות קלט (inputs) */
+.form-group input,
+.form-group textarea,
+.form-group select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #4CAF50;
+}
+
+/* עיצוב תיבת הטקסט (textarea) */
+.form-group textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+/* עיצוב כפתור שליחה */
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* עיצוב כפתור שליחה במצב disabled */
+.submit-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* עיצוב תוויות של שדות החובה */
+.required {
+  color: red;
+  font-weight: bold;
+}
+
+/* עיצוב לניהול רווחים בין הפסקאות */
+.p4 {
+  margin: 15px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* עיצוב טופס לתצוגה על מסכים קטנים */
+@media (max-width: 768px) {
+  .apartment-form {
+    padding: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .submit-btn {
+    width: 100%;
+  }
+}
+
+
